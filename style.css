@@ -122,6 +122,7 @@ main {
     align-items: center;
     gap: 2rem;
     padding-top: 3rem;
+    z-index: 999;
 }
 
 
