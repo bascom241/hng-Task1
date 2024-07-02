@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="image-container">
+                <img data-testid="slackProfilePicture" src="avatarProfile.jpeg" alt="">
+            </div>
+      
+
+            <div class="link-container">
+
+                <li class="hideOnMobile"><a href="http://hng.tech/learn" data-testid="hngLink">Hng Tech Learn</a></li>
+                <li class="hideOnMobile"><a href="http://keyword.dog" data-testid="keyWordLink">KeyWord Dog</a></li>
+                <li class="hideOnMobile"><a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape any web</a></li>
+                <li onclick=showSideBar() class="menu-button" id="side" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </div>
+
+
+            <div class="sidebar">
+                <li onclick=hideSideBar() id="close"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=" #000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="http://hng.tech/learn" data-testid="hngLink">Hng Tech Learn</a></li>
+                <li><a href="http://keyword.dog" data-testid="keyWordLink">KeyWord Dog</a></li>
+                <li><a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape any web</a></li>
+               
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="section ">
+            <h1>My Tech Goals in next 2years </h1>
+            <div class="goals-container">
+
+                <div>
+                    <h2>Technical skills goals</h2>
+                    <ul class="list">
+                        <li>✅ Improve my skills in Data Structure Algorithms</li>
+                        <li>✅Master React frame works</li>
+                        <li>✅Upskill with additional frame works like vue/ Angular</li>
+                        <li>✅Dive into Cloud computing </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Software Development goals</h2>
+                    <ul class="list">
+                        <li>✅Build and deploy a full stack camp app </li>
+                        <li>✅Explore mobile app development</li>
+                        <li>✅Contribute to open source Projects</li>
+                        <li>✅Land a full time job in full stack </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="sub_info">
+                    <p>Slack name➡️</p>
+                    <p data-testid="@Bascode">@Bascode</p>
+                </div>
+
+                <div class="sub_info">
+                    <p>Current Time➡️</p>
+                    <p data-testid="currentTimeUtc" id="current-time">-----</p>
+                </div>
+
+                <div class="sub_info">
+                    <p>Current Day➡️</p>
+                    <p data-testid="currentDay" id="current-day">-------</p>
+                </div>
+                <div class="sub_info">
+                    <p id="email">Slack Email➡️</p>
+                    <p data-testid="abdulbasitabdulwahab21@gmail.com">abdulbasitabdulwahab21@gmail.com</p>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+</body>
+
+</html>
